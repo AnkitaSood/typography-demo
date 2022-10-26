@@ -1,1 +1,31 @@
-<typography-demo-nx-welcome></typography-demo-nx-welcome>
+<header>
+    <mat-button-toggle-group #group="matButtonToggleGroup" name="theme" aria-label="theme selector" value="light-theme">
+        <mat-button-toggle value="light-theme">Light</mat-button-toggle>
+        <mat-button-toggle value="dark-theme">Dark</mat-button-toggle>
+    </mat-button-toggle-group>
+</header>
+<section [ngClass]="group.value">
+    <h1> This is a demo app!! </h1>
+    <h2> This is a subtitle of the demo app!!!!! </h2>
+    <mat-card class="example-card">
+        <mat-card-title-group>
+            <mat-card-title>Shiba Inu</mat-card-title>
+            <mat-card-subtitle>Extra large</mat-card-subtitle>
+            <img mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"  alt="cute Shiba Inu dog pic">
+        </mat-card-title-group>
+        <mat-card-content>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
+            from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+            originally bred for hunting.
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-flat-button color="primary">Like</button>
+            <button mat-stroked-button color="accent">Subscribe</button>
+            <button mat-stroked-button color="warn">Delete</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <a href="#">Click here!!!</a>
+
+
+</section>
