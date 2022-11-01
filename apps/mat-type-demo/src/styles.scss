@@ -35,7 +35,6 @@ $mat-type-demo-theme: mat.define-light-theme((
 
 $dark-theme-font-family : 'Tangerine', serif;
 $dark-typography: mat.define-typography-config(
-  // Specify "Comic Sans" as the default font family for all levels.
         $font-family: $dark-theme-font-family,
 );
 
